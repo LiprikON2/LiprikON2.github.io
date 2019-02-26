@@ -158,15 +158,17 @@ footer {
         display: none;
     }
     .title {
+        justify-self: center;
         font-size: 80px;
-        grid-column: 3 / 11;
+        grid-column: 3 / 10;
     }
     .timer {
         font-size: 135px;
     }
     .hand-img {
+        justify-self: center;
         height: 90%;
-        grid-column: 4 / 8;
+        grid-column: 3 / 10;
         grid-row: 3;
     }
 }
