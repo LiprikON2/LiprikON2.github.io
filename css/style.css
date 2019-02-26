@@ -105,7 +105,7 @@ body {
     grid-column: 1 / 8;
     grid-row: 2;
     text-transform: uppercase;
-    /* background-color: #212020; */
+    /* line-height: 2; */
 }
 
 
@@ -144,7 +144,6 @@ footer {
     body {
         zoom: 30%;
         background-image: none;
-        /* grid-template-rows: 10%; */
     }
     .logo {
         margin-left: 20px;
@@ -157,6 +156,18 @@ footer {
     }
     .fancy-button {
         display: none;
+    }
+    .title {
+        font-size: 80px;
+        grid-column: 3 / 11;
+    }
+    .timer {
+        font-size: 135px;
+    }
+    .hand-img {
+        height: 90%;
+        grid-column: 4 / 8;
+        grid-row: 3;
     }
 }
 
