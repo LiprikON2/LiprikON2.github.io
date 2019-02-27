@@ -160,7 +160,7 @@ footer {
     .title {
         justify-self: center;
         font-size: 80px;
-        grid-column: 3 / 10;
+        grid-column: 3 / 11;
     }
     .timer {
         font-size: 135px;
@@ -168,7 +168,7 @@ footer {
     .hand-img {
         justify-self: center;
         height: 90%;
-        grid-column: 3 / 10;
+        grid-column: 3 / 11;
         grid-row: 3;
     }
 }
