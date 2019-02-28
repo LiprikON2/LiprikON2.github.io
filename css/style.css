@@ -42,7 +42,7 @@ Photoshop's
 /* BODY */
 body {
     
-    background-image: url(../img/minback.jpg);
+    background-image: url(img/minback.jpg);
     background-repeat: no-repeat;
     background-position: 0 -180px;
     background-size: 100% 160%;
@@ -161,7 +161,7 @@ footer {
         filter: brightness(85%);
     }
     .close {
-        background-image: url(../img/close.png);
+        background-image: url(img/close.png);
         background-repeat: no-repeat;
         background-position: center center;
     }
