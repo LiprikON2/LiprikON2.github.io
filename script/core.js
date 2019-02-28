@@ -15,3 +15,9 @@ function renderTime() {
 }
 
 setInterval(renderTime, 1000)
+
+
+
+const menu = document.querySelector('#menu');
+
+menu.addEventListener('click', () => x);

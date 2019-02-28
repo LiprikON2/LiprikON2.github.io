@@ -42,7 +42,7 @@ Photoshop's
 /* BODY */
 body {
     
-    background-image: url(minback.jpg);
+    background-image: url(../img/minback.jpg);
     background-repeat: no-repeat;
     background-position: 0 -180px;
     background-size: 100% 160%;
@@ -58,7 +58,6 @@ body {
 .head-wrap {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    background-image: linear-gradient(#ffe60038, transparent);
     background-color: #fec00f;
 
 }
@@ -114,13 +113,10 @@ body {
     grid-column: 8 / 13;
     grid-row: 2;
 }
-#menu {
+#menu-button {
     display: none;
 }
 
-span {
-    
-}
 .timer {
     display: inline;
     font-family: Calibri, 'Trebuchet MS', sans-serif;
@@ -140,19 +136,34 @@ footer {
 
 
 @media screen and (max-width: 1000px) {
+
+    .head-wrap {
+        grid-template-columns: 120px 350px repeat(10, 1fr)
+    }
     
     body {
         zoom: 30%;
         background-image: none;
     }
     .logo {
-        margin-left: 20px;
+        margin-left: 15px;
     }
-    #menu {
+    #menu-button {
         display: inline-block;
-        margin: 20px 0 0 20px;
-        font-size: 80px;
+        outline: 0;
+        background-color: #fec00f;
+        border: none;
+        font-size: 70px;
         content: "\f0c9";
+        
+    }
+    #menu-button:active {
+        filter: brightness(85%);
+    }
+    .close {
+        background-image: url(../img/close.png);
+        background-repeat: no-repeat;
+        background-position: center center;
     }
     .fancy-button {
         display: none;
