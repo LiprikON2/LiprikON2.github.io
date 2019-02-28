@@ -20,4 +20,4 @@ setInterval(renderTime, 1000)
 
 const menu = document.querySelector('#menu');
 
-menu.addEventListener('click', () => x);
+menu.addEventListener('click', () => console.log('haha'));
