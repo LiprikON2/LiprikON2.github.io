@@ -151,7 +151,9 @@ footer {
         margin-left: 15px;
     }
     #menu-button {
-        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         outline: 0;
         background-color: #fec00f;
         border: none;
