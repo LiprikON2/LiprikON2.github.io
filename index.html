@@ -11,10 +11,20 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
+    
     <!-- The Fanciest Clock in the Universe! -->
+
+<!-- SIDEBAR -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+<!-- HEADER -->
     <header class="head-wrap">
-        <button id="menu-button" class="fas fa-bars"></button>
-        <!-- <span class="close">&nbsp;</span> -->
+        <button id="menu-button" class="fas fa-bars" onclick="openNav()"></button>
         <div class="logo">
             <img class="logo-img unselectable" src="css/img/clock.svg" alt="clock logo">
             <div class="logo-name unselectable">Clocky</div>
@@ -24,17 +34,15 @@
             <button class="fancy-button unselectable">Main</button>
             <button class="fancy-button unselectable">About</button>
         </nav>
-        
     </header>
+<!-- CONTENT -->
     <section class="container">
         <h6 class="title"><p>The Fanciest Clock in the Universe!
         <div class="timer">19:31:12</div></p></h6>
-
         <img src="css/img/custom-hand.png" alt="Hand with a clock" class="hand-img">
-        
     </section>
+<!-- FOOTER -->
     <footer>
-        <!-- FOOTER -->
     </footer>
 
     
