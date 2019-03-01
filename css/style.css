@@ -138,11 +138,13 @@ footer {
 @media screen and (max-width: 1000px) {
 
     .head-wrap {
-        grid-template-columns: 120px 350px repeat(10, 1fr)
+        position: fixed;
+        grid-template-columns: 120px 350px repeat(10, 1fr);
+        padding: 0 100% 0 0;
     }
     
     body {
-        zoom: 30%;
+        zoom: 35%;
         background-image: none;
     }
     .logo {
@@ -155,10 +157,14 @@ footer {
         border: none;
         font-size: 70px;
         content: "\f0c9";
-        
+        height: 120px
     }
     #menu-button:active {
         filter: brightness(85%);
+    }
+    .container {
+        /* margin-top: 100px; */
+        grid-template-rows: 220px 1fr 1fr;
     }
     .close {
         background-image: url(img/close.png);
@@ -178,7 +184,7 @@ footer {
     }
     .hand-img {
         justify-self: center;
-        height: 90%;
+        height: 550%;
         grid-column: 3 / 11;
         grid-row: 3;
     }
