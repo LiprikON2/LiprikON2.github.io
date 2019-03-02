@@ -175,12 +175,6 @@ footer {
         grid-template-rows: 220px 1fr 1fr;
     }
 
-    /* .close {
-        background-image: url(img/close.png);
-        background-repeat: no-repeat;
-        background-position: center center;
-    } */
-
     .fancy-button {
         display: none;
     }
@@ -222,13 +216,20 @@ footer {
         padding: 22px 22px 22px 90px;
         text-decoration: none;
         font-size: 70px;
-        color: #818181;
+        color: #fec00f;
         display: block;
         transition: 0.3s;
+        font-family: Calibri, 'Trebuchet MS', sans-serif;
     }
     /* When you mouse over the navigation links, change their color */
     .sidenav a:hover {
         color: #f1f1f1;
+    }
+    .sidenav a:active {
+        background-color: #222222;
+    }
+    .closebtn.closebtn:active {
+        background-color: unset;
     }
     /* Position and style the close button (top right corner) */
     .sidenav .closebtn {
@@ -247,9 +248,13 @@ footer {
         display: block;
     }
     @media screen and (max-height: 450px) {
-        .sidenav {padding-top: 42px;}
+        /* .sidenav {padding-top: 40px;} */
         .sidenav a {font-size: 50px;}
     }
 }
 
+/* TODO's:
+1) Fix broken hitbox of .closebtn
+2) Add "View desktop/mobile" version
 
+*/
