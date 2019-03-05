@@ -1,17 +1,21 @@
 * {
     box-sizing: border-box;
 }
-/* COLORS
-#f26159; - redish
+/*
+ <-- COLORS -->
+    #f26159; - redish
+    #212020; - gray
+    #fec00f; - yellow
 
-Photoshop's
-#212020; - gray
-#fec00f; - yellow
+<-- DESKTOP VERSION REQUEST -->
+    desktop_example.html
+    https://stackoverflow.com/questions/21312707/show-full-site-button-to-bypass-css-media-queries
+
 */
 
 
 /* FANCY BUTTON */
-.fancy-button {
+.fancy-button, .fancy-button.full {
     outline-style: none;
     font-size: 40px;
     text-transform: uppercase;
@@ -22,6 +26,8 @@ Photoshop's
     margin: 10px;
     padding: 0 30px;
     cursor: pointer;
+
+    display: unset;
 
 }
 
@@ -40,8 +46,9 @@ Photoshop's
 }
 
 /* BODY */
-body {
-    
+body, body.full {
+
+    /* background */
     background-image: url(img/minback.jpg);
     background-repeat: no-repeat;
     background-position: 0 -180px;
@@ -51,6 +58,8 @@ body {
     display: grid;
     grid-template-rows: 120px 720px;
     margin: 0;
+
+    zoom: unset;
 }
 
 
@@ -65,7 +74,7 @@ body {
 
 }
 
-.logo {
+.logo, .logo.full {
     display: flex;
     align-items: center;
     margin-left: 40px;
@@ -90,13 +99,13 @@ body {
     grid-column: auto / 13;
 }
 
-#menu-button, #mySidenav {
+#menu-button, #mySidenav, #menu-button.full, #mySidenav.full {
     display: none;
 }
 
 
 /* CONTENT */
-.container {
+.container, .container.full {
     display: grid;
     font-family: Calibri, 'Trebuchet MS', sans-serif;
     font-size: 60px;
@@ -105,23 +114,28 @@ body {
     grid-template-rows: 100px 1fr;
 }
 
-.title {
+.title, .title.full {
     margin: 0;
     text-align: center;
     grid-column: 1 / 8;
     grid-row: 2;
     text-transform: uppercase;
+
+    font-size: unset;
+    justify-self: unset;
 }
 
 
-.hand-img {
+.hand-img, .hand-img.full {
     height: 60%;
     grid-column: 8 / 13;
     grid-row: 2;
+
+    justify-self: unset;
 }
 
 
-.timer {
+.timer, .timer.full {
     display: inline;
     font-family: Calibri, 'Trebuchet MS', sans-serif;
     font-size: 100px;
@@ -173,7 +187,6 @@ footer {
     }
 
     .container {
-        /* margin-top: 100px; */
         grid-template-rows: 220px 1fr 1fr;
     }
 

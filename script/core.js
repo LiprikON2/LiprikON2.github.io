@@ -20,8 +20,27 @@ setInterval(renderTime, 1000)
 // DESKTOP VERSION REQUEST
 
 document.querySelector('.desktop').addEventListener('click', function () {
-    console.log("click");
-    document.querySelector(".head-wrap").classList.add("full");
+    document.querySelector('.head-wrap').classList.add('full');
+    document.querySelector('body').classList.add('full');
+    document.querySelector('.logo').classList.add('full');
+    document.querySelector('#menu-button').classList.add('full');
+    document.querySelector('#mySidenav').classList.add('full');
+    document.querySelector('.container').classList.add('full');
+    for (button of document.querySelectorAll('.fancy-button')) {
+        button.classList.add('full');
+    }
+    document.querySelector('.title').classList.add('full');
+    document.querySelector('.timer').classList.add('full');
+    document.querySelector('.hand-img').classList.add('full');
+
+
+    
+
+
+
+
+
+
 });
 
 

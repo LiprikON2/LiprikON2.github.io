@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- REQESTING DESKTOP VERSION -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<!-- CSS -->
+    <style>
+    .container, .container.full {
+        background-color: green;
+    }
+
+    @media (max-width: 400px) {
+        .container {
+            background-color: red;
+        }
+    }
+    </style>
+
+
+    <title>Document</title>
+</head>
+<body>
+
+<!-- HTML -->
+    <div class=container>f</div>
+    <button>full site</button>
+
+
+<!-- JAVASRIPT -->
+    <script>
+        document.querySelector("button").addEventListener("click", function () {
+        document.querySelector("div").classList.add("full");
+    });
+    </script>
+
+
+
+</body>
+</html>
