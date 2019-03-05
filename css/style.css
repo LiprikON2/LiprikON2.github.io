@@ -55,10 +55,13 @@ body {
 
 
 /* HEADER */
-.head-wrap {
+.head-wrap, .head-wrap.full {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     background-color: #fec00f;
+
+    position: unset;
+    padding: 0;
 
 }
 
@@ -99,7 +102,7 @@ body {
     font-size: 60px;
     color: #fec00f;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 100px 1fr 1fr;
+    grid-template-rows: 100px 1fr;
 }
 
 .title {
@@ -108,7 +111,6 @@ body {
     grid-column: 1 / 8;
     grid-row: 2;
     text-transform: uppercase;
-    /* line-height: 2; */
 }
 
 
@@ -212,7 +214,7 @@ footer {
         transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
     }
     /* The navigation menu links */
-    .sidenav a {
+    .sidenav a:not(:last-child) {
         padding: 22px 22px 22px 90px;
         text-decoration: none;
         font-size: 70px;
@@ -222,14 +224,19 @@ footer {
         font-family: Calibri, 'Trebuchet MS', sans-serif;
     }
     /* When you mouse over the navigation links, change their color */
-    .sidenav a:hover {
+    .sidenav a:not(:last-child):hover {
         color: #f1f1f1;
+        background-color: #222222;
     }
-    .sidenav a:active {
+    .sidenav a:not(:last-child):active {
         background-color: #222222;
     }
     .closebtn.closebtn:active {
         background-color: unset;
+    }
+    #desktop {
+        color: #333333;
+        font-size: 35px;
     }
     /* Position and style the close button (top right corner) */
     .sidenav .closebtn {
@@ -256,5 +263,5 @@ footer {
 /* TODO's:
 1) Fix broken hitbox of .closebtn
 2) Add "View desktop/mobile" version
-
+3) Make tap on background close sidebar
 */

@@ -1,7 +1,5 @@
-
+// CLOCK
 const timeLeft = document.querySelector('.timer');
-
-
 
 function renderTime() {
     let now = new Date();
@@ -18,11 +16,17 @@ setInterval(renderTime, 1000)
 
 
 
-const menu = document.querySelector('#menu');
 
-menu.addEventListener('click', () => console.log('haha'));
+// DESKTOP VERSION REQUEST
+
+document.querySelector('.desktop').addEventListener('click', function () {
+    console.log("click");
+    document.querySelector(".head-wrap").classList.add("full");
+});
 
 
+
+// SIDEBAR
 /* Set the width of the side navigation to 250px */
 function openNav() {
     document.getElementById("mySidenav").style.width = "700px";
@@ -32,3 +36,4 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
+
