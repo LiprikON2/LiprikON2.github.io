@@ -99,7 +99,7 @@ body, body.full {
     grid-column: auto / 13;
 }
 
-#menu-button, #mySidenav, #menu-button.full, #mySidenav.full {
+#menu-button, #mySidenav, #menu-button.full, #mySidenav.full, .closeSidenav, .closeSidenav.full {
     display: none;
 }
 
@@ -147,7 +147,7 @@ body, body.full {
 
 /* FOOTER */
 footer {
-    font-size: 80px;
+    font-size: 30px;
     background-color: #fec00f;
     grid-row: 3;
 }
@@ -251,6 +251,7 @@ footer {
         color: #333333;
         font-size: 35px;
     }
+    
     /* Position and style the close button (top right corner) */
     .sidenav .closebtn {
         position: absolute;
@@ -271,10 +272,20 @@ footer {
         /* .sidenav {padding-top: 40px;} */
         .sidenav a {font-size: 50px;}
     }
+
+    .closeSidenav {
+        display: block;
+
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+    }
 }
 
 /* TODO's:
-1) Fix broken hitbox of .closebtn
-2) Add "View desktop/mobile" version
-3) Make tap on background close sidebar
+  1) Fix broken hitbox of .closebtn
+✓ 2) Add "View desktop/mobile" version
+  3) Make tap on background close sidebar
 */
