@@ -19,7 +19,7 @@ setInterval(renderTime, 1000)
 
 // DESKTOP VERSION REQUEST
 
-document.querySelector('.desktop').addEventListener('click', function () {
+function goDesktop() {
     // add .full class
     document.querySelector('.head-wrap').classList.add('full');
     document.querySelector('body').classList.add('full');
@@ -33,8 +33,10 @@ document.querySelector('.desktop').addEventListener('click', function () {
     document.querySelector('.hand-img').classList.add('full');
     document.querySelector('.closeSidenav').classList.add('full');
     
-});
-document.querySelector('.mobile').addEventListener('click', function () {
+    // add go mobile button
+    document.querySelector('.mobile').removeAttribute('style');
+}
+function goMobile() {
     // remove .full class
     document.querySelector('.head-wrap').classList.remove('full');
     document.querySelector('body').classList.remove('full');
@@ -47,19 +49,10 @@ document.querySelector('.mobile').addEventListener('click', function () {
     document.querySelector('.timer').classList.remove('full');
     document.querySelector('.hand-img').classList.remove('full');
     document.querySelector('.closeSidenav').classList.remove('full');
-    // add .mobile class
-    document.querySelector('.head-wrap').classList.add('mobile');
-    document.querySelector('body').classList.add('mobile');
-    document.querySelector('.logo').classList.add('mobile');
-    document.querySelector('#menu-button').classList.add('mobile');
-    document.querySelector('#mySidenav').classList.add('mobile');
-    document.querySelector('.container').classList.add('mobile');
-    for (button of document.querySelectorAll('.fancy-button')) { button.classList.add('mobile'); }
-    document.querySelector('.title').classList.add('mobile');
-    document.querySelector('.timer').classList.add('mobile');
-    document.querySelector('.hand-img').classList.add('mobile');
-    document.querySelector('.closeSidenav').classList.add('mobile');
-});
+
+    // remove go mobile button
+    document.querySelector('.mobile').setAttribute('style', 'display: none;');
+}
 
 // SIDEBAR
 /* Set the width of the side navigation to 250px */
@@ -71,4 +64,22 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

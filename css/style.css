@@ -47,7 +47,6 @@
 
 /* BODY */
 body, body.full {
-
     /* background */
     background-image: url(img/minback.jpg);
     background-repeat: no-repeat;
@@ -149,7 +148,7 @@ body, body.full {
 footer {
     font-size: 30px;
     background-color: #fec00f;
-    grid-row: 3;
+    grid-row: 4;
 }
 
 
@@ -247,9 +246,16 @@ footer {
     .closebtn.closebtn:active {
         background-color: unset;
     }
-    #desktop {
+    .desktop {
+        display: block;
+        position: absolute;
+        bottom: 20px;
+        left: 25%;
         color: #333333;
-        font-size: 35px;
+        font-size: 45px;
+        /* forbids text to go on next line */
+        white-space: nowrap;
+        overflow: hidden;
     }
     
     /* Position and style the close button (top right corner) */
@@ -286,6 +292,7 @@ footer {
 
 /* TODO's:
   1) Fix broken hitbox of .closebtn
-✓ 2) Add "View desktop/mobile" version
-  3) Make tap on background close sidebar
+✓ 2) Add "View desktop" version
+  3) Add "View mobile" version
+✓ 4) Make tap on background close sidebar
 */
