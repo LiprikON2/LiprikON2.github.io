@@ -32,6 +32,8 @@ function goDesktop() {
     document.querySelector('.timer').classList.add('full');
     document.querySelector('.hand-img').classList.add('full');
     document.querySelector('.closeSidenav').classList.add('full');
+    document.querySelector('.v-shape').classList.add('full');
+
     
     // add go mobile button
     document.querySelector('.mobile').removeAttribute('style');
@@ -49,6 +51,7 @@ function goMobile() {
     document.querySelector('.timer').classList.remove('full');
     document.querySelector('.hand-img').classList.remove('full');
     document.querySelector('.closeSidenav').classList.remove('full');
+    document.querySelector('.v-shape').classList.remove('full');
 
     // remove go mobile button
     document.querySelector('.mobile').setAttribute('style', 'display: none;');

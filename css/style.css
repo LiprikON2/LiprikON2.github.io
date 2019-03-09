@@ -47,16 +47,12 @@
 
 /* BODY */
 body, body.full {
-    /* background */
-    background-image: url(img/minback.jpg);
-    background-repeat: no-repeat;
-    background-position: 0 -180px;
-    background-size: 100% 160%;
-    background-color: #1d1c1c;
+    
     
     display: grid;
-    grid-template-rows: 120px 720px;
+    grid-template-rows: 180px 720px;
     margin: 0;
+    background-color: #191919;
 
     zoom: unset;
 }
@@ -64,13 +60,25 @@ body, body.full {
 
 /* HEADER */
 .head-wrap, .head-wrap.full {
+    
+
     display: grid;
+    height: 120px;
     grid-template-columns: repeat(12, 1fr);
     background-color: #fec00f;
 
     position: unset;
     padding: 0;
 
+}
+
+.v-shape, .v-shape.full {
+    /* background */
+    background-image: url(img/minback-1.png);
+    background-repeat: no-repeat;
+    background-position: 0 -190px;
+    background-size: 100% 200%;
+    
 }
 
 .logo, .logo.full {
@@ -145,10 +153,13 @@ body, body.full {
 }
 
 /* FOOTER */
-footer {
-    font-size: 30px;
+.credits {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
     background-color: #fec00f;
-    grid-row: 4;
 }
 
 
@@ -159,10 +170,14 @@ footer {
         grid-template-columns: 120px 350px repeat(10, 1fr);
         padding: 0 100% 0 0;
     }
-    
+
+    .v-shape {
+        background-image: unset;
+    }
+
     body {
+        grid-template-rows: 60px 720px;
         zoom: 35%;
-        background-image: none;
     }
 
     .logo {
@@ -205,11 +220,14 @@ footer {
 
     .hand-img {
         justify-self: center;
-        height: 550%;
+        height: 800px;
         grid-column: 3 / 11;
         grid-row: 3;
     }
 
+    .credits {
+        font-size: 40px;
+    }
 
 
     /* SIDEBAR */
@@ -295,4 +313,8 @@ footer {
 ✓ 2) Add "View desktop" version
   3) Add "View mobile" version
 ✓ 4) Make tap on background close sidebar
+  5) Javascript backend
+    a) Log In / Register
+    b) Cookies
+    c) Datebase
 */
