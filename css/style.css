@@ -1,10 +1,10 @@
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 /*
  <-- COLORS -->
     #f26159; - redish
-    #212020; - gray
+    #191919; - gray
     #fec00f; - yellow
 
 <-- DESKTOP VERSION REQUEST -->
@@ -46,22 +46,28 @@
 }
 
 /* BODY */
-body, body.full {
-    
-    
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #191919;
+}
+.page-container, .page-container.full {
+    position: relative;
+    min-height: 100vh;
+    height: 100%;
+
     display: grid;
     grid-template-rows: 180px 720px;
+    padding: 0;
     margin: 0;
     background-color: #191919;
-
     zoom: unset;
 }
 
 
 /* HEADER */
 .head-wrap, .head-wrap.full {
-    
-
     display: grid;
     height: 120px;
     grid-template-columns: repeat(12, 1fr);
@@ -69,7 +75,6 @@ body, body.full {
 
     position: unset;
     padding: 0;
-
 }
 
 .v-shape, .v-shape.full {
@@ -154,7 +159,7 @@ body, body.full {
 
 /* FOOTER */
 .credits {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
     text-align: center;
@@ -175,8 +180,8 @@ body, body.full {
         background-image: unset;
     }
 
-    body {
-        grid-template-rows: 60px 720px;
+    .page-container {
+        grid-template-rows: 120px 1fr;
         zoom: 35%;
     }
 
@@ -201,7 +206,7 @@ body, body.full {
     }
 
     .container {
-        grid-template-rows: 220px 1fr 1fr;
+        grid-template-rows: 50px 700px;
     }
 
     .fancy-button {
@@ -267,7 +272,7 @@ body, body.full {
     .desktop {
         display: block;
         position: absolute;
-        bottom: 20px;
+        bottom: 200px;
         left: 25%;
         color: #333333;
         font-size: 45px;

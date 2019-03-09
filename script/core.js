@@ -22,7 +22,7 @@ setInterval(renderTime, 1000)
 function goDesktop() {
     // add .full class
     document.querySelector('.head-wrap').classList.add('full');
-    document.querySelector('body').classList.add('full');
+    document.querySelector('.page-container').classList.add('full');
     document.querySelector('.logo').classList.add('full');
     document.querySelector('#menu-button').classList.add('full');
     document.querySelector('#mySidenav').classList.add('full');
@@ -41,7 +41,7 @@ function goDesktop() {
 function goMobile() {
     // remove .full class
     document.querySelector('.head-wrap').classList.remove('full');
-    document.querySelector('body').classList.remove('full');
+    document.querySelector('.page-container').classList.remove('full');
     document.querySelector('.logo').classList.remove('full');
     document.querySelector('#menu-button').classList.remove('full');
     document.querySelector('#mySidenav').classList.remove('full');
