@@ -139,7 +139,8 @@ html, body {
 
 
 .hand-img, .hand-img.full {
-    height: 60%;
+
+    height: 500px;
     grid-column: 8 / 13;
     grid-row: 2;
 
