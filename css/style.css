@@ -52,7 +52,7 @@ html, body {
     padding: 0;
     background-color: #191919;
 }
-.page-container, .page-container.full {
+.root, .root.full {
     position: relative;
     min-height: 100vh;
     height: 100%;
@@ -181,7 +181,7 @@ html, body {
         background-image: unset;
     }
 
-    .page-container {
+    .root {
         grid-template-rows: 120px 1fr;
         zoom: 35%;
     }
