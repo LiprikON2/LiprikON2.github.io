@@ -2,12 +2,12 @@
 const timeLeft = document.querySelector('.timer');
 
 function renderTime() {
-    let now = new Date();
+    const now = new Date();
 
     // Formating time to 00 format (9 -> 09)
-    hour = ("0" +now.getHours()).slice(-2);
-    minute = ("0" +now.getMinutes()).slice(-2);
-    second = ("0" +now.getSeconds()).slice(-2);
+    const hour = ("0" +now.getHours()).slice(-2);
+    const minute = ("0" +now.getMinutes()).slice(-2);
+    const second = ("0" +now.getSeconds()).slice(-2);
 
     timeLeft.innerHTML = `${hour}:${minute}:${second}`;
 }
@@ -22,7 +22,7 @@ setInterval(renderTime, 1000)
 function goDesktop() {
     // add .full class
     document.querySelector('.head-wrap').classList.add('full');
-    document.querySelector('.root').classList.add('full');
+    document.querySelector('.page-container').classList.add('full');
     document.querySelector('.logo').classList.add('full');
     document.querySelector('#menu-button').classList.add('full');
     document.querySelector('#mySidenav').classList.add('full');

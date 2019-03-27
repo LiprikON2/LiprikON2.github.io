@@ -1,5 +1,5 @@
 * {
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 /*
  <-- COLORS -->
@@ -52,7 +52,7 @@ html, body {
     padding: 0;
     background-color: #191919;
 }
-.root, .root.full {
+.page-container, .page-container.full {
     position: relative;
     min-height: 100vh;
     height: 100%;
@@ -181,7 +181,7 @@ html, body {
         background-image: unset;
     }
 
-    .root {
+    .page-container {
         grid-template-rows: 120px 1fr;
         zoom: 35%;
     }
