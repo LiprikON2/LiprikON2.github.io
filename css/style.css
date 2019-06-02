@@ -314,6 +314,11 @@ html, body {
     }
 }
 
+@media screen and (max-width: 600px) {
+    .page-container {
+        zoom: 28%;
+    }
+}
 /* TODO's:
   1) Fix broken hitbox of .closebtn
 ✓ 2) Add "View desktop" version
