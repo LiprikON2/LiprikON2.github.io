@@ -304,8 +304,6 @@ html, body {
     }
 
     .closeSidenav {
-        display: block;
-
         position: fixed;
         bottom: 0;
         right: 0;
