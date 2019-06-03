@@ -169,7 +169,7 @@ html, body {
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1025px) {
 
     .head-wrap {
         position: fixed;
@@ -310,11 +310,20 @@ html, body {
         height: 100%;
         width: 100%;
     }
-}
-
-@media screen and (max-width: 600px) {
-    .page-container {
-        zoom: 28%;
+    @media screen and (max-width: 800px) {
+        .page-container {
+            zoom: 50%;
+        }
+        @media screen and (max-width: 600px) {
+            .page-container {
+                zoom: 35%;
+            }
+            @media screen and (max-width: 400px) {
+                .page-container {
+                    zoom: 30%;
+                }
+            }
+        }
     }
 }
 /* TODO's:
