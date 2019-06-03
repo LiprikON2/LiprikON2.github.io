@@ -62,7 +62,7 @@ html, body {
     padding: 0;
     margin: 0;
     background-color: #191919;
-    zoom: unset;
+    zoom: 90%;
 }
 
 
@@ -321,6 +321,11 @@ html, body {
             @media screen and (max-width: 400px) {
                 .page-container {
                     zoom: 30%;
+                }
+                @media screen and (max-width: 325px) {
+                    .page-container {
+                        zoom: 25%;
+                    }
                 }
             }
         }
